@@ -1,0 +1,68 @@
+---
+title: "Lab 2: Sharing Your Work"
+format: html
+editor: visual
+toc: true
+lang: "en"
+execute:
+  cache: true
+  freeze: auto
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| label: "Lab 2"
+
+```
+
+## Lab Introduction
+
+This document accompanies the Lab 2 description on our course website.
+
+## Lab Tasks
+
+1.  Link your computer to your Github account following the instructions in our lab guide.
+
+```{r}
+
+## /usr/bin/git
+install.packages("usethis")
+
+library(usethis)
+use_git_config(user.name = "Gabriela Abril", user.email = "mabril2@illinois.edu")
+
+use_git_config(core.editor = "emacs")
+```
+
+```{r}
+
+library(usethis)
+git_default_branch_configure(name = "main")
+```
+
+1.  Create a Quarto Pub account following the instructions in our lab guide.
+
+2.  Modify this Quarto document to create an HTML document that describes the following:
+
+    a.  How has a particular neighborhood or place shaped your life? What contributions did it make?
+    b.  What makes a neighborhood good or bad? How can we reliably describe the differences that matter between neighborhoods?
+    c.  What do you think the goal(s) of neighborhood analysis should be? What types of stories are you interested in telling?
+
+Your response does not need to be extensive - this is both an opportunity to reflect as well as an opportunity to practice your Quarto document creation and formatting skills.
+
+Publish your short reflection using Quarto Pub. Remember that this document is published on the internet and is accessible to anyone with the URL). Include the URL to your Quarto Pub site below - we want to hear your thoughts!
+
+4.  After you have published this document via Quarto Pub, add the URL to your Quarto Pub to the beginning of the Quarto document and then commit and push the document to Github (this will be in the Lab 2 repository which you initially pulled to your local computer).
+
+5.  In a folder separate from the one in which you completed the work on your first lab, pull the Lab 1 template from Github, add your modified lab 1 files, and then commit and push your completed lab 1 files to the Lab 1 assignment area on Github.
+
+## Deliverables
+
+1.  Lab 1 repository pushed to your Lab 1 Github repository
+
+2.  Lab 2 repository pushed to your Lab 2 Github repository
+
+3.  Quarto Pub site with URL shared in your Lab 1 Quarto Markdown document that is pushed to your Lab 2 Github repository.
+
+That's it! We're looking forward to seeing what you come up with!
